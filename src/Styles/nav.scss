@@ -1,0 +1,66 @@
+nav{
+    width: 20%;
+    height: 110vh;
+    z-index: 2;
+    border-right: 2px solid #acdeaa;
+    position: fixed;
+    overflow: hidden;
+    background-color: #d6f8b8;
+    .logo{
+        background-image: url('../Assets/logo.png');
+        height: 30%;
+        background-position: center;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #acdeaa;
+    }
+    ul{
+        margin-top: 25%;
+        .Link{
+            text-decoration: none;
+            &:visited{
+                color: black;
+            }
+        }
+        .active{
+            li{
+                background-color: orange;
+                color: wheat;
+            }
+        }
+    }
+    li{
+        list-style: none;
+        padding: 5px;
+        padding: 3px;
+        font-family: 'Pacifico', cursive;
+        margin-top: 1em;
+        transition: 0.4s ease;
+        font-size: 18px;
+        &::after{
+            content: '';
+            position: absolute;
+            right: -85.4%;
+            transform: translateY(-3px);
+            background-color: orange;
+            width: 85.4%;
+            height: 4.8%;
+            z-index: -3;
+            transition: 0.4s ease;
+        }
+        &:hover::after{
+            transform: translate(-100%,-3px);
+        }
+        &:hover{
+            color: wheat;
+        }
+    }
+    .footer{
+        position: absolute;
+        bottom: 0%;
+        height: 24%;
+        width: 100%;
+        background-color: #acdeaa;
+    }
+}
