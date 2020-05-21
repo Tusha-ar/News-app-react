@@ -1,5 +1,20 @@
 @import './nav.scss';
 @import './Home.scss';
 @import './readNews.scss';
+@import './load.scss';
 @import '../App.css';
+@import './contact.scss';
+@import './Footer.scss';
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Kaushan+Script&family=Pacifico&display=swap');
+
+
+
+
+.notfound{
+    border: 2px solid black;
+    background-image: url('../Assets/notFound.jpg');
+    background-size: contain;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 20.1%;
+}

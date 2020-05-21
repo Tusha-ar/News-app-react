@@ -1,0 +1,17 @@
+.load{
+    
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    height: 100%;
+    background-color: black;
+    
+    .gif{
+        position: relative;
+        transform: translate(30%,10%);
+        height: 100%;
+        background-image: url('../Assets/load.gif');
+        background-repeat: no-repeat;
+    }
+}

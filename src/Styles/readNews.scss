@@ -1,10 +1,11 @@
 .readNews{
-    border: 2px solid red;
     height: 100%;
     margin-left: 20.1%;
     margin-top: 1px;
     display: grid;
-    grid-auto-rows: 98vh;
+    overflow-x: hidden;
+    background-color: rgba(198,203,239, 0.75);
+    grid-auto-rows: 100vh;
     .searchSec{
         position: relative;
         display: flex;
@@ -12,5 +13,66 @@
         align-items: center;
         flex-direction: column;
         
+        & input{
+            padding: 20px 20px 5px 20px;
+            width: 50%;
+            font-size: 2em;
+            background-color: transparent;
+            border: 2px solid #dfe2e2;
+            color: orange;
+            border-radius: 30px 30px 30px 30px;
+            outline: none;
+            transition: 0.4s ease;
+        }
+
+        & button{
+            border-radius: 20px 20px 20px 20px;
+            font-size: 1.5em ;
+            border-color: #dfe2e2;
+            color: gray;
+            background-color: transparent;
+            margin-top: 1.5em;
+            outline: none;
+            padding: 20px 50px;
+        }
+        & video{
+            position: absolute;
+            z-index: -5;
+            height: 98vh;
+            margin-left: 5em;
+            margin-left: 5em;
+        }
+    }
+    & .newsSearch{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        & img{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            border: 1px solid black;
+            height: 25em;
+            width: 25em;
+        }
+        & .content{
+            display: flex;
+            flex-direction: column;
+            padding: 30px 6em;
+            text-align: justify;
+            & a{
+                font-family: 'Carter One', cursive;
+                text-decoration: none;
+                color: #132238;
+            }
+            & p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                word-spacing: 3px;
+                line-height: 1.5em;
+            }
+        }
     }
 }

@@ -1,0 +1,22 @@
+.contact{
+    height: 100%;
+    margin-left: 20.1%;
+    overflow-x: hidden; 
+    & iframe{
+        width: 50em;
+        height: 20em;
+    }
+    .Myinfo{
+        padding: 30px;
+        
+        h1{
+            font-family: 'Kaushan Script', cursive;
+        }
+        span{
+            font-family: 'Carter One', cursive;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

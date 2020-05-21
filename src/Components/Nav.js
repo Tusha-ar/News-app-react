@@ -17,12 +17,14 @@ const Nav = ()=>{
                 </NavLink>
                 <NavLink to='readNews' className='Link' activeClassName='active'>
                     <li>
-                        Read News
+                        Search News
                     </li>
                 </NavLink>
-                <li>
-                    Contact
-                </li>
+                <NavLink to='contact' className='Link' activeClassName='active'>
+                    <li>
+                        Contact
+                    </li>
+                </NavLink>
             </ul>
             <Footer/>
         </nav>

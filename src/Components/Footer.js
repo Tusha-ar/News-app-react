@@ -4,7 +4,8 @@ import React from 'react';
 const Footer= ()=>{
     return(
         <div className='footer'>
-            <h3>Footer</h3>
+            <span>Gifs from <a href='https://www.giphy.com'>Giphy</a></span><br/>
+            <span>Pictures by <a href='https://www.freepik.com'>Freepik</a></span>
         </div>
     )
 }

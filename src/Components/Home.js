@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
+import Load from './Load';
 
 const Home =()=>{
     const[news, setNews] = useState([]);
-
+    const[loading, setLoading] = useState(false)
     useEffect(()=>{
-        axios.get('https://newspi.org/v2/top-headlines?country=us&pageSize=10&apiKey=630d082fbc9045c8aec87aa809a1b681')
+        setLoading(true)
+        axios.get('https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=IN&pageSize=10&apiKey=ee0c2aec14c44913bd890cc4840eee79')
             .then((res)=>{
                 setNews(res.data.articles)
+                setLoading(false)
             })
             .catch(err=>{
                 console.log(err)
             })
     },[])
         return(
+            loading?
+            <Load/>:
             <div className='home'>
                 <h1>Read Latest News</h1>
                 {
@@ -21,7 +26,7 @@ const Home =()=>{
                         <div className='news' key={headline.title}>
                             <img src={headline.urlToImage} alt='img'/>
                             <div className='content'>
-                                <h2 className='title'>{headline.title}</h2>
+                                <a href={headline.url}><h2 className='title'>{headline.title}</h2></a>
                                 <p>{headline.description}</p>
                             </div>
                         </div>
