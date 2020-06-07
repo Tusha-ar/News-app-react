@@ -13,7 +13,7 @@ const ReadNews= () =>{
     }
     const handleClick =()=>{
         setLoading(true)
-        Axios.get(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=${title}&pageSize=20&apiKey=ee0c2aec14c44913bd890cc4840eee79`)
+        Axios.get(`https://newsapi.org/v2/everything?q=${title}&pageSize=20&apiKey=7df471d01cb8406893727f71c461303e`)
             .then(res=>{
                 console.log(res)
                 setNews(res.data.articles)

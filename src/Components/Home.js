@@ -7,7 +7,7 @@ const Home =()=>{
     const[loading, setLoading] = useState(false)
     useEffect(()=>{
         setLoading(true)
-        axios.get('https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=IN&pageSize=10&apiKey=ee0c2aec14c44913bd890cc4840eee79')
+        axios.get('https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=IN&pageSize=10&apiKey=7df471d01cb8406893727f71c461303e')
             .then((res)=>{
                 setNews(res.data.articles)
                 setLoading(false)
