@@ -6,4 +6,4 @@ simple app to search and read news
 # API used
 NEWS API
 ## live at
-https://news-app-react.now.sh/
+https://news-app-react-ihcnvlr82.now.sh/
